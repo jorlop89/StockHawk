@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/stock_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="18dp">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/background_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="@string/company_name_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_color"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    tool:text="Google Inc." />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/background_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/price_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/txtprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/bid_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtbid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ask"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/ask_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtask"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/background_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/open"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/orange_700"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/open_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtopen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+                    <TextView
+                        android:id="@+id/previousClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/orange_700"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/previous_close_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtpreviousClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dayLow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/red_800"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/day_low_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtdayLow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+                    <TextView
+                        android:id="@+id/dayHigh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/green_teal_700"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/day_high_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtdayHigh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/yearLow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/red_800"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/year_low_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtYearLow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+                    <TextView
+                        android:id="@+id/yearHigh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/green_teal_700"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="@string/year_high_text"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtYearHigh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_view_color"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        tool:text="1000.00" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/background_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/marketcap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="@string/market_cap_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/txtmarketcap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_color"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    tool:text="80000000.00" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/background_light" />
+
+        </LinearLayout>
+
+</ScrollView>
+

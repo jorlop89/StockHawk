@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name" translatable="false">Stock Hawk</string>
+
+    <string name="widget_title" translatable="false">Stock Hawk</string>
+
+    <string name="details_screen">Details Screen</string>
+
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+
+    <string name="pref_stocks_key">stocks</string>
+
+    <string name="pref_display_mode_key">displayMode</string>
+    <string name="pref_display_mode_default">@string/pref_display_mode_percentage_key</string>
+
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
+
+    <string name="default_stocks_yahoo">YHOO</string>
+    <string name="default_stocks_apple">AAPL</string>
+    <string name="default_stocks_microsoft">MSFT</string>
+    <string name="default_stocks_facebook">FB</string>
+
+
+    <string name="action_change_units">@string/pref_display_mode_key</string>
+
+
+    <string name="dialog_title">Add Stock</string>
+    <string name="dialog_hint">Write a Symbol (e.g. GOOG, FB, APPL)</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_add">Add</string>
+
+    <!-- Strings related with the error that show in the error TextView -->
+
+    <string name="error_no_network">No network connectivity! Will load stock cursor when the network is available.</string>
+    <string name="error_no_stocks">No stocks added! Hit the floating action button to add one.</string>
+    <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
+    <string name="toast_no_connectivity">Will refresh when network available.</string>
+
+
+    <!-- Descriptions from contentvalues and item values -->
+    <string name="description_fab">Add stock value</string>
+    <string name="description_percentage">Percentage Display Mode</string>
+    <string name="description_dollar">Dollar Display Mode</string>
+
+
+    <!-- Strings that define the title TextViews-->
+
+    <string name="company_name_text">Company Name</string>
+    <string name="price_text">Price</string>
+    <string name="bid_text">Bid</string>
+    <string name="ask_text">Ask</string>
+    <string name="open_text">Open</string>
+    <string name="previous_close_text">Previous Close</string>
+    <string name="day_low_text">Day Low</string>
+    <string name="day_high_text">Day High</string>
+    <string name="year_low_text">Year Low</string>
+    <string name="year_high_text">Year High</string>
+    <string name="market_cap_text">Market Cap</string>
+    <string name="error_message">Error message</string>
+
+</resources>
