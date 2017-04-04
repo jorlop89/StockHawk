@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name" translatable="false">Stock Hawk</string>
+    <string name="app_name">Stock Hawk</string>
 
-    <string name="widget_title" translatable="false">Stock Hawk</string>
+    <string name="widget_title">Stock Hawk</string>
 
     <string name="details_screen">Details Screen</string>
 
     <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
 
-    <string name="pref_stocks_key">stocks</string>
+    <string name="pref_stocks_key" translatable="false">stocks</string>
 
-    <string name="pref_display_mode_key">displayMode</string>
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
     <string name="pref_display_mode_default">@string/pref_display_mode_percentage_key</string>
 
     <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>

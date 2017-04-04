@@ -45,6 +45,7 @@ public final class Contract {
         public static final int POSITION_ABSOLUTE_CHANGE = 3;
         public static final int POSITION_PERCENTAGE_CHANGE = 4;
         public static final int POSITION_HISTORY = 5;
+
         /*Update Contract */
         public static final int POSITION_COMPANY_NAME = 6;
         public static final int POSITION_BID = 7;

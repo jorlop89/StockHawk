@@ -1,6 +1,5 @@
 package com.udacity.stockhawk.widget;
 
-import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -14,7 +13,6 @@ import android.widget.RemoteViewsService;
 
 import com.udacity.stockhawk.R;
 import com.udacity.stockhawk.data.Contract;
-import com.udacity.stockhawk.ui.DetailActivity;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -24,9 +22,6 @@ import java.util.Locale;
 
 import static com.udacity.stockhawk.widget.DetailWidgetProvider.EXTRA_SYMBOL;
 
-/**
- * Created by Portatil on 26/03/2017.
- */
 
 public class DetailWidgetService extends RemoteViewsService {
 
@@ -131,21 +126,18 @@ public class DetailWidgetService extends RemoteViewsService {
 
             remoteViews.setTextViewText(R.id.change, percentageFormat.format(perChange / 100));
 
-            Intent fillIntent = new Intent(getApplicationContext(), DetailActivity.class);
+            Intent fillIntent = new Intent();
             Bundle extras = new Bundle();
             extras.putString(EXTRA_SYMBOL, symbol);
             fillIntent.putExtras(extras);
-
-            PendingIntent pendingIntent =  PendingIntent.getActivity(mApplicationContext, 0, fillIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            remoteViews.setOnClickPendingIntent(R.id.listitem, pendingIntent);
-            //remoteViews.setOnClickFillInIntent(R.id.listitem,fillIntent);
+            remoteViews.setOnClickFillInIntent(R.id.listitem,fillIntent);
 
             return remoteViews;
         }
 
         @Override
         public RemoteViews getLoadingView() {
-            return new RemoteViews(mApplicationContext.getPackageName(), R.layout.list_item_quote);
+            return null;
         }
 
         @Override

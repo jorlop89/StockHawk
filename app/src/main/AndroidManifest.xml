@@ -19,6 +19,7 @@
         android:theme="@style/AppTheme"
         android:supportsRtl="true"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +27,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.DetailActivity" />
+        <activity android:name=".ui.DetailActivity"
+            android:label="@string/details_screen"
+            android:parentActivityName="com.udacity.stockhawk.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.udacity.stockhawk.ui.DetailActivity" />
 
+        </activity>
         <service
             android:name=".sync.QuoteIntentService"
             android:exported="false" />
@@ -45,6 +52,8 @@
 
         <receiver android:name=".widget.DetailWidgetProvider">
             <intent-filter>
+                <action android:name="com.udacity.stockhawk.ACTION_DATA_UPDATED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
 
@@ -54,6 +63,8 @@
         </receiver>
         
         <service android:name=".widget.DetailWidgetService"
+            android:enabled="true"
+            android:exported="false"
             android:permission="android.permission.BIND_REMOTEVIEWS"/>
 
 

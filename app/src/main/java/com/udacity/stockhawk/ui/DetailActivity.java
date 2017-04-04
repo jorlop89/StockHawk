@@ -36,10 +36,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import yahoofinance.histquotes.HistoricalQuote;
 
-/**
- * Created by Portatil on 19/03/2017.
- */
-
 public class DetailActivity extends AppCompatActivity {
 
 
@@ -113,7 +109,6 @@ public class DetailActivity extends AppCompatActivity {
     LineData lineData;
     LineDataSet closeValues;
 
-    //public static final String EXTRA_SYMBOL = "symbol";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

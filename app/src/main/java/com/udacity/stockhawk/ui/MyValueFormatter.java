@@ -7,10 +7,6 @@ import com.github.mikephil.charting.utils.ViewPortHandler;
 
 import java.text.DecimalFormat;
 
-/**
- * Created by Portatil on 22/03/2017.
- */
-
 public class MyValueFormatter implements IValueFormatter{
     private DecimalFormat mFormat;
 
