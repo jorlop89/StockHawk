@@ -26,7 +26,6 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -124,7 +123,6 @@ public class DetailActivity extends AppCompatActivity {
         getStockData(symbol);
         showStockData();
 
-
     }
 
     private void showStockData() {
@@ -173,7 +171,7 @@ public class DetailActivity extends AppCompatActivity {
 
         int position = 0;
 
-        Collections.reverse(lines);
+        //Collections.reverse(lines);
 
         for(String[] line: lines){
             dates.add(Long.valueOf(line[0]));
